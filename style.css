@@ -1,0 +1,168 @@
+html {
+    background: linear-gradient(rgb(145, 143, 143), rgb(255, 255, 255));
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    width:100vw;
+    height:100vh:
+  }
+  
+  /* Add a background color to the top navigation */
+  .topnav {
+      background-color: rgb(255, 255, 255);
+      overflow: hidden;
+      font-family: Fantasy, serif;
+    }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+      float: left;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-size: 30px;
+  }
+  
+  .topnav form {
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav input {
+    font-size: 30px;
+  }
+  
+  .topnav button {
+    font-size: 30px;
+  }
+    
+  h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+  h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+  
+    /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+    
+    /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  
+  /*slideshow formatting */
+  * {box-sizing:border-box}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: Fantasy, serif;
+    }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .button {
+    font-size: 20px;
+    height: 90px;
+    width: 250px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-family: Houndtime, serif;
+  } 
+  
+  .button-center {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .topnav img {
+      min-width: 100%;
+    }
+  }

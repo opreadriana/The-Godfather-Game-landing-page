@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation website</title>
+    <link rel='stylesheet' href='style.css'>
+    <style>.button {
+      font-size: 20px;
+      height: 90px;
+      width: 250px;
+      cursor: pointer;
+      margin: 20px auto;
+      font-family: Georgia, serif;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+<div class="topnav">
+    <a href="#home">Home</a>
+    <a class= "active" href="#WebDesign">Games</a>
+    <a href="#GamesDevelopment">Shop</a>
+    <a href="#AppplicationDevelopment">Support</a>
+    <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search.." maxlength="20">
+        <button>Search</button>
+      </form>
+</div>
+<br>
+<h1 style="font-family: Houndtime"> Introducing The Godfather: Zombie Survival</h1>
+<br>
+<h2 style="font-family: Houndtime"> The Godfather game immerses you into the action of the legendary films with a twist.</h2>
+<br>
+<img src="poster.jpg">
+<br>
+<br>
+<h2 style="font-family: Houndtime"> The Corleone family found itself in the middle of a zombie attack. Can you survive?</h2>
+<br>
+<br>
+<img src="godfather.jpg">
+<br>
+<br>
+<br>
+<h1 style="font-family: Houndtime"> Immerse yourself into the world of mafia play and customise both your mobster character and the zombie enemies. </h1>
+<br>
+<br>
+
+<!-- Slideshow container -->
+
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="character.jpg" style="width:50%">
+      <div class="text"> Create your realistic mobster, customize face, body and clothing. </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="zombie.jpg" style="width:50%">
+      <div class="text"> You can now create your scary zombie enemies as well. </div>
+    </div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 4 seconds
+    }
+    </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style="color:rgb(34, 11, 0); font-family: Houndtime"> Experience virtual play with HD visuals.</h1>
+<img src="play game.jpg" style="width:80%">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style=" color:rgb(34, 11, 0); font-family: Houndtime"> A look inside character customisation. </h1>
+<br>
+<div class="games">
+<img src="img1.jpg">
+<img src="img2.jpg">
+<img src="img3.jpg">
+<img src="zombie2.jpg">
+</div>
+<br>
+<br>
+<div class="button-center"><form>
+  <input type="button" value="PRE-ORDER HERE" class="button">
+  </form></div>
+</body>
+</html>
